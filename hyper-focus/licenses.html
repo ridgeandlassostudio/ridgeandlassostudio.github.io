@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/R&L Symbol.svg" />
+  <link rel="apple-touch-icon" href="/R&L Symbol.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Open-source licenses · Hyper Focus: Minimalist Launcher</title>
+  <meta name="description" content="Open-source software licenses and credits for Hyper Focus: Minimalist Launcher by Ridge & Lasso Studio." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #fbf9f9;
+      --surface-2: #f3f0f0;
+      --dark: #09090b;
+      --border: #e6e3e3;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --text: #18181b;
+      --text-body: #34343a;
+      --muted: #666670;
+      --accent: #e6001a;
+      --accent-hover: #c90017;
+      --font-display: "Oxanium", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --radius-lg: 14px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero-wrap {
+      position: relative;
+      background: var(--dark);
+      color: #ffffff;
+      overflow: hidden;
+      background-image:
+        radial-gradient(ellipse 65% 55% at 50% 105%, rgba(230, 0, 26, 0.34) 0%, rgba(230, 0, 26, 0.1) 45%, transparent 72%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+    }
+    .topbar {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: invert(1) brightness(100);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover { color: #ffffff; text-decoration: none; }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-contact:hover { background: var(--accent-hover); text-decoration: none; }
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(4.2rem, 13vw, 8.5rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .hero-meta {
+      margin: 12px 0 0;
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .pill-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+    .pill-nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-dark);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.75);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .pill-nav a:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pill-nav a.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .lead-box {
+      position: relative;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+      padding: 12px 0;
+    }
+    .lead-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(3.5rem, 11vw, 7rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(24, 24, 27, 0.045);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .lead-box p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .doc-grid {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .toc-card {
+      position: sticky;
+      top: 24px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    .toc-title {
+      margin: 0 0 14px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toc-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      text-decoration: none;
+      padding: 3px 0;
+      transition: color 0.15s ease;
+    }
+    .toc-list a:hover { color: var(--accent); text-decoration: none; }
+    .toc-num {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: var(--accent);
+      min-width: 20px;
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+      scroll-margin-top: 24px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sec-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .section-card p { margin: 0 0 12px; }
+    .section-card p:last-child { margin-bottom: 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 1px 6px;
+      border-radius: 5px;
+      color: var(--text);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 12px 0;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    details {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--text-body);
+      overflow-x: auto;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 44px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .footer-brand img {
+      height: 36px;
+      width: auto;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.84rem;
+      color: var(--muted);
+      max-width: 280px;
+    }
+    .footer-col h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .footer-col a {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 20px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .footer-legal a { color: var(--muted); }
+    .footer-legal a:hover { color: var(--accent); }
+    @media (max-width: 820px) {
+      .nav-links { display: none; }
+      .doc-grid { grid-template-columns: 1fr; }
+      .toc-card { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .topbar { padding: 16px 18px; }
+      .brand img { height: 34px; }
+      .section-card { padding: 20px 18px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Ridge &amp; Lasso Studio — Home">
+        <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#apps">Apps</a>
+        <a href="/#games">Games</a>
+        <a href="/#connect">Connect</a>
+      </nav>
+      <a class="btn-contact" href="/#connect">Contact →</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-watermark" aria-hidden="true">CREDITS</div>
+      <p class="eyebrow">Hyper Focus: Minimalist Launcher</p>
+      <h1>Open-source licenses</h1>
+      <p class="hero-meta">Last updated 26 November 2026</p>
+      <nav class="pill-nav" aria-label="Hyper Focus legal documents">
+        <a href="/hyper-focus/terms.html">Terms of Service</a>
+        <a href="/hyper-focus/privacy.html">Privacy Policy</a>
+        <a href="/hyper-focus/licenses.html" class="active">Licenses</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="lead-box">
+      <div class="lead-watermark" aria-hidden="true">CREDITS</div>
+      <p>Hyper Focus: Minimalist Launcher is built with the open-source frameworks, packages, and icon sets listed below. We thank their authors and maintainers. Each component is used under the licence shown.</p>
+    </div>
+
+    <div class="doc-grid">
+      <aside class="toc-card" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <ol class="toc-list">
+          <li><a href="#s1"><span class="toc-num">01</span>Flutter &amp; Dart SDK</a></li>
+          <li><a href="#s2"><span class="toc-num">02</span>Flutter &amp; Dart packages</a></li>
+          <li><a href="#s3"><span class="toc-num">03</span>Material Icons</a></li>
+          <li><a href="#s4"><span class="toc-num">04</span>Full licence texts</a></li>
+          <li><a href="#s5"><span class="toc-num">05</span>Contact</a></li>
+        </ol>
+      </aside>
+
+      <div class="sections">
+        <section class="section-card" id="s1">
+          <div class="section-head">
+            <span class="sec-badge">01</span>
+            <h2>Flutter &amp; Dart SDK</h2>
+          </div>
+          <p>Hyper Focus: Minimalist Launcher is built with the <strong>Flutter</strong> UI toolkit and the <strong>Dart</strong> programming language SDK.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Licence</th>
+                <th>Copyright &amp; Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Flutter SDK</strong></td>
+                <td>BSD-3-Clause</td>
+                <td>© 2014 The Flutter Authors · <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer">github.com/flutter/flutter</a></td>
+              </tr>
+              <tr>
+                <td><strong>Dart SDK</strong></td>
+                <td>BSD-3-Clause</td>
+                <td>© 2012 The Dart Project Authors · <a href="https://github.com/dart-lang/sdk" target="_blank" rel="noopener noreferrer">github.com/dart-lang/sdk</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section-card" id="s2">
+          <div class="section-head">
+            <span class="sec-badge">02</span>
+            <h2>Flutter &amp; Dart packages</h2>
+          </div>
+          <p>The following open-source packages are bundled in Hyper Focus under the BSD-3-Clause licence:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Package</th>
+                <th>Licence</th>
+                <th>Author / Repository</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>shared_preferences</code></td>
+                <td>BSD-3-Clause</td>
+                <td>The Flutter Authors · <a href="https://pub.dev/packages/shared_preferences" target="_blank" rel="noopener noreferrer">pub.dev</a></td>
+              </tr>
+              <tr>
+                <td><code>url_launcher</code></td>
+                <td>BSD-3-Clause</td>
+                <td>The Flutter Authors · <a href="https://pub.dev/packages/url_launcher" target="_blank" rel="noopener noreferrer">pub.dev</a></td>
+              </tr>
+              <tr>
+                <td><code>in_app_purchase</code></td>
+                <td>BSD-3-Clause</td>
+                <td>The Flutter Authors · <a href="https://pub.dev/packages/in_app_purchase" target="_blank" rel="noopener noreferrer">pub.dev</a></td>
+              </tr>
+              <tr>
+                <td><code>intl</code></td>
+                <td>BSD-3-Clause</td>
+                <td>The Dart Project Authors · <a href="https://pub.dev/packages/intl" target="_blank" rel="noopener noreferrer">pub.dev</a></td>
+              </tr>
+              <tr>
+                <td><code>flutter_local_notifications</code></td>
+                <td>BSD-3-Clause</td>
+                <td>Michael Bui (MaikuB) &amp; contributors · <a href="https://pub.dev/packages/flutter_local_notifications" target="_blank" rel="noopener noreferrer">pub.dev</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section-card" id="s3">
+          <div class="section-head">
+            <span class="sec-badge">03</span>
+            <h2>Material Icons</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Licence</th>
+                <th>Copyright &amp; Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Material Design Icons</strong></td>
+                <td>Apache License 2.0</td>
+                <td>© Google LLC · <a href="https://github.com/google/material-design-icons" target="_blank" rel="noopener noreferrer">github.com/google/material-design-icons</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section-card" id="s4">
+          <div class="section-head">
+            <span class="sec-badge">04</span>
+            <h2>Full licence texts</h2>
+          </div>
+          <p>The full text of each applicable open-source licence is reproduced below:</p>
+
+          <details>
+            <summary>Show BSD 3-Clause License text</summary>
+            <pre>Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software without
+   specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+          </details>
+
+          <details>
+            <summary>Show Apache License 2.0 notice</summary>
+            <pre>Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</pre>
+          </details>
+        </section>
+
+        <section class="section-card" id="s5">
+          <div class="section-head">
+            <span class="sec-badge">05</span>
+            <h2>Contact</h2>
+          </div>
+          <p>For questions about third-party attributions or open-source notices in Hyper Focus: Minimalist Launcher, contact <strong>Ridge &amp; Lasso Studio</strong> at <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+          <p>Ridge &amp; Lasso Studio is an independent game and app developer in India.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/hyper-focus/privacy.html">Hyper Focus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Games</h3>
+          <ul>
+            <li><a href="/arrow-out/privacy.html">Arrow Out 2D</a></li>
+            <li><a href="/arrow-out-3d/privacy.html">Arrow Out 3D</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#connect">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ridge &amp; Lasso Studio</span>
+        <div class="footer-legal">
+          <a href="/hyper-focus/terms.html">Terms of Service</a>
+          <a href="/hyper-focus/privacy.html">Privacy Policy</a>
+          <a href="/hyper-focus/licenses.html">Licenses</a>
+          <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
