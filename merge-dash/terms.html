@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/R&L Symbol.svg" />
+  <link rel="apple-touch-icon" href="/R&L Symbol.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Terms of Service · Merge Dash: Fruit Match</title>
+  <meta name="description" content="Terms of Service for Merge Dash: Fruit Match by Ridge &amp; Lasso Studio." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #fbf9f9;
+      --surface-2: #f3f0f0;
+      --dark: #09090b;
+      --border: #e6e3e3;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --text: #18181b;
+      --text-body: #34343a;
+      --muted: #666670;
+      --accent: #e6001a;
+      --accent-hover: #c90017;
+      --font-display: "Oxanium", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --radius-lg: 14px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero-wrap {
+      position: relative;
+      background: var(--dark);
+      color: #ffffff;
+      overflow: hidden;
+      background-image:
+        radial-gradient(ellipse 65% 55% at 50% 105%, rgba(230, 0, 26, 0.34) 0%, rgba(230, 0, 26, 0.1) 45%, transparent 72%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+    }
+    .topbar {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: invert(1) brightness(100);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover { color: #ffffff; text-decoration: none; }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-contact:hover { background: var(--accent-hover); text-decoration: none; }
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(4.2rem, 13vw, 8.5rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .hero-meta {
+      margin: 12px 0 0;
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .pill-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+    .pill-nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-dark);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.75);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .pill-nav a:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pill-nav a.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .lead-box {
+      position: relative;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+      padding: 12px 0;
+    }
+    .lead-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(3.5rem, 11vw, 7rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(24, 24, 27, 0.045);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .lead-box p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .doc-grid {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .toc-card {
+      position: sticky;
+      top: 24px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    .toc-title {
+      margin: 0 0 14px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toc-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      text-decoration: none;
+      padding: 3px 0;
+      transition: color 0.15s ease;
+    }
+    .toc-list a:hover { color: var(--accent); text-decoration: none; }
+    .toc-num {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: var(--accent);
+      min-width: 20px;
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+      scroll-margin-top: 24px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sec-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .section-card p { margin: 0 0 12px; }
+    .section-card p:last-child { margin-bottom: 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 1px 6px;
+      border-radius: 5px;
+      color: var(--text);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 12px 0;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    details {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--text-body);
+      overflow-x: auto;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 44px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .footer-brand img {
+      height: 36px;
+      width: auto;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.84rem;
+      color: var(--muted);
+      max-width: 280px;
+    }
+    .footer-col h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .footer-col a {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 20px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .footer-legal a { color: var(--muted); }
+    .footer-legal a:hover { color: var(--accent); }
+    @media (max-width: 820px) {
+      .nav-links { display: none; }
+      .doc-grid { grid-template-columns: 1fr; }
+      .toc-card { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .topbar { padding: 16px 18px; }
+      .brand img { height: 34px; }
+      .section-card { padding: 20px 18px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Ridge &amp; Lasso Studio — Home">
+        <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#apps">Apps</a>
+        <a href="/#games">Games</a>
+        <a href="/#connect">Connect</a>
+      </nav>
+      <a class="btn-contact" href="/#connect">Contact →</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-watermark" aria-hidden="true">TERMS</div>
+      <p class="eyebrow">Merge Dash: Fruit Match</p>
+      <h1>Terms of Service</h1>
+      <p class="hero-meta">Last updated 26 November 2026</p>
+      <nav class="pill-nav" aria-label="Merge Dash legal documents">
+        <a href="/merge-dash/terms.html" class="active">Terms of Service</a>
+        <a href="/merge-dash/privacy.html">Privacy Policy</a>
+        <a href="/merge-dash/licenses.html">Licenses</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="lead-box">
+      <div class="lead-watermark" aria-hidden="true">TERMS</div>
+      <p>Please read these Terms before playing Merge Dash: Fruit Match. They are written to be plain: what you may do with the Game, how purchases, the Fruit Pass, the tournament and ads work, and the limits of our responsibility.</p>
+    </div>
+
+    <div class="doc-grid">
+      <aside class="toc-card" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <ol class="toc-list">
+          <li><a href="#s1"><span class="toc-num">01</span>Agreement</a></li>
+          <li><a href="#s2"><span class="toc-num">02</span>Who may play</a></li>
+          <li><a href="#s3"><span class="toc-num">03</span>Your licence to use the Game</a></li>
+          <li><a href="#s4"><span class="toc-num">04</span>Purchases</a></li>
+          <li><a href="#s5"><span class="toc-num">05</span>Fruit Pass subscription</a></li>
+          <li><a href="#s6"><span class="toc-num">06</span>Coins, tools and other in-game items</a></li>
+          <li><a href="#s7"><span class="toc-num">07</span>Weekly Tournament</a></li>
+          <li><a href="#s8"><span class="toc-num">08</span>Ads</a></li>
+          <li><a href="#s9"><span class="toc-num">09</span>Google Play Games and progress</a></li>
+          <li><a href="#s10"><span class="toc-num">10</span>Fair play and conduct</a></li>
+          <li><a href="#s11"><span class="toc-num">11</span>Ownership</a></li>
+          <li><a href="#s12"><span class="toc-num">12</span>Updates and availability</a></li>
+          <li><a href="#s13"><span class="toc-num">13</span>Disclaimer</a></li>
+          <li><a href="#s14"><span class="toc-num">14</span>Limitation of liability</a></li>
+          <li><a href="#s15"><span class="toc-num">15</span>Ending these Terms</a></li>
+          <li><a href="#s16"><span class="toc-num">16</span>Governing law and disputes</a></li>
+          <li><a href="#s17"><span class="toc-num">17</span>Changes to these Terms</a></li>
+          <li><a href="#s18"><span class="toc-num">18</span>Contact</a></li>
+        </ol>
+      </aside>
+
+      <div class="sections">
+        <section class="section-card" id="s1">
+          <div class="section-head">
+            <span class="sec-badge">01</span>
+            <h2>Agreement</h2>
+          </div>
+          <p>These Terms of Service (“Terms”) are an agreement between you and Ridge &amp; Lasso Studio (“we”, “us”) for the mobile game Merge Dash: Fruit Match (the “Game”). By downloading or playing the Game you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please do not use the Game.</p><p>Google Play’s own terms also apply to your download, purchases and subscriptions. If they conflict with these Terms on payments or refunds, Google Play’s terms apply.</p>
+        </section>
+
+        <section class="section-card" id="s2">
+          <div class="section-head">
+            <span class="sec-badge">02</span>
+            <h2>Who may play</h2>
+          </div>
+          <p>You must be at least 13 years old, or the minimum age required in your country, to use the Game. If you are under 18 (or the age of majority where you live), a parent or guardian must agree to these Terms for you and is responsible for any purchases.</p>
+        </section>
+
+        <section class="section-card" id="s3">
+          <div class="section-head">
+            <span class="sec-badge">03</span>
+            <h2>Your licence to use the Game</h2>
+          </div>
+          <p>We give you a personal, non-exclusive, non-transferable, revocable licence to install and play the Game on devices you own or control, for your own non-commercial entertainment. The Game is licensed to you, not sold.</p><p>You may not, and may not help anyone else to:</p><ul><li>copy, modify, translate, sell, rent or distribute the Game or any part of it;</li><li>reverse engineer, decompile or try to extract its source code, except where the law expressly allows it;</li><li>use cheats, bots, automation or modified versions, or interfere with ads, purchases, leaderboards, the Weekly Tournament or other players;</li><li>use the Game, its characters, art or text to train artificial-intelligence models or build a competing product;</li><li>remove copyright or other notices.</li></ul>
+        </section>
+
+        <section class="section-card" id="s4">
+          <div class="section-head">
+            <span class="sec-badge">04</span>
+            <h2>Purchases</h2>
+          </div>
+          <ul><li><b>One-time purchases:</b> coin packs, the Starter, Sprout and Tool Box bundles and 24-hour No Ads are consumable and are used up once added to your game. Remove ads, the Harvest Bundle and Crowned Avatars are permanent on devices using the same Google account.</li><li>Prices are shown in the Game as supplied by Google Play and may include taxes. We may change prices for future purchases.</li><li>If you reinstall the Game or change phones, use <b>Shop → Fruit Pass → Restore</b> while signed in to the same Google account. Consumable items already received cannot be restored.</li><li>Refunds are handled by Google Play under its refund policy. Nothing in these Terms limits refund rights you have under consumer law.</li></ul>
+        </section>
+
+        <section class="section-card" id="s5">
+          <div class="section-head">
+            <span class="sec-badge">05</span>
+            <h2>Fruit Pass subscription</h2>
+          </div>
+          <p>Fruit Pass is an optional auto-renewing subscription, billed weekly or yearly by Google Play. The weekly plan may start with a free trial; you are charged when the trial ends unless you cancel before then.</p><p>It renews automatically at the end of each period until you cancel. You can cancel at any time in <b>Google Play → Payments &amp; subscriptions → Subscriptions</b>; you keep its perks until the end of the period you paid for. Its perks (no ads between runs, extra coins, a free daily tool, faster lives and every theme) may be adjusted as the Game evolves, and we will say so in the Game before a change that reduces them.</p>
+        </section>
+
+        <section class="section-card" id="s6">
+          <div class="section-head">
+            <span class="sec-badge">06</span>
+            <h2>Coins, tools and other in-game items</h2>
+          </div>
+          <p>Coins, tools, lives, stars, trophies, avatars, badges, tournament prizes and similar items have no monetary value, cannot be exchanged for money or transferred, and are not your property. We may rebalance them, for example prices, rewards or how tools work, as the Game evolves.</p>
+        </section>
+
+        <section class="section-card" id="s7">
+          <div class="section-head">
+            <span class="sec-badge">07</span>
+            <h2>Weekly Tournament</h2>
+          </div>
+          <p>The Weekly Tournament is a game of skill. Entry is free once a day, and further entries cost in-game coins only. Prizes are in-game coins only, never money, and are added to your game after the week ends, based on your best score and, if you are signed in to Google Play Games, your weekly leaderboard rank. Scores that appear to come from cheating, bugs or manipulated devices may be removed and their prizes withheld.</p>
+        </section>
+
+        <section class="section-card" id="s8">
+          <div class="section-head">
+            <span class="sec-badge">08</span>
+            <h2>Ads</h2>
+          </div>
+          <p>The Game is free because it shows ads provided by Google AdMob. Ads are created by third parties, and we are not responsible for their content or for the products, sites or services they promote. Rewarded videos are optional and give the stated reward only when watched to the end.</p>
+        </section>
+
+        <section class="section-card" id="s9">
+          <div class="section-head">
+            <span class="sec-badge">09</span>
+            <h2>Google Play Games and progress</h2>
+          </div>
+          <p>Leaderboards are provided by Google Play Games Services under Google’s terms. Your gamer name and scores may be visible to other players. Progress is saved on your device only. If you clear app data or uninstall, it may be lost and we cannot restore it (purchases can be restored through Google Play).</p>
+        </section>
+
+        <section class="section-card" id="s10">
+          <div class="section-head">
+            <span class="sec-badge">10</span>
+            <h2>Fair play and conduct</h2>
+          </div>
+          <p>Leaderboards and the tournament are meant to be fair. We may remove scores or results that appear to come from cheating, bugs or manipulated devices. Do not use the Game in any way that breaks the law or harms others.</p>
+        </section>
+
+        <section class="section-card" id="s11">
+          <div class="section-head">
+            <span class="sec-badge">11</span>
+            <h2>Ownership</h2>
+          </div>
+          <p>The Game, including its characters, art, levels, code, sounds and text, is owned by Ridge &amp; Lasso Studio or its licensors and protected by intellectual-property laws. Third-party components are used under their own licences, listed on our Licenses page.</p><p>If you send us ideas or feedback, we may use them freely without paying you. If you think something in the Game infringes your rights, write to <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a> with the details.</p>
+        </section>
+
+        <section class="section-card" id="s12">
+          <div class="section-head">
+            <span class="sec-badge">12</span>
+            <h2>Updates and availability</h2>
+          </div>
+          <p>We may update, change or stop offering the Game or any feature, such as Adventure levels, the tournament, the league or themes, at any time. Some updates may be needed to keep playing. The Game needs some features of your device and may not work on every device.</p>
+        </section>
+
+        <section class="section-card" id="s13">
+          <div class="section-head">
+            <span class="sec-badge">13</span>
+            <h2>Disclaimer</h2>
+          </div>
+          <p>The Game is provided “as is” and “as available”. To the fullest extent the law allows, we make no warranties of any kind, express or implied, including that the Game will be error-free, uninterrupted or fit for a particular purpose.</p>
+        </section>
+
+        <section class="section-card" id="s14">
+          <div class="section-head">
+            <span class="sec-badge">14</span>
+            <h2>Limitation of liability</h2>
+          </div>
+          <p>To the fullest extent the law allows, we are not liable for any indirect, incidental, special or consequential loss, or for loss of data, progress or profits. Our total liability to you for any claim about the Game is limited to the amount you paid us for the Game in the 12 months before the claim, or INR 1,000 if that is higher.</p><p>Nothing in these Terms excludes liability that cannot be excluded by law, such as for fraud, or rights you have as a consumer.</p>
+        </section>
+
+        <section class="section-card" id="s15">
+          <div class="section-head">
+            <span class="sec-badge">15</span>
+            <h2>Ending these Terms</h2>
+          </div>
+          <p>You can stop at any time by uninstalling the Game (and cancelling any Fruit Pass subscription in Google Play). We may suspend or end your licence if you seriously or repeatedly break these Terms. Sections on purchases, ownership, the disclaimer, liability and governing law continue to apply afterwards.</p>
+        </section>
+
+        <section class="section-card" id="s16">
+          <div class="section-head">
+            <span class="sec-badge">16</span>
+            <h2>Governing law and disputes</h2>
+          </div>
+          <p>These Terms are governed by the laws of India. Before starting any legal claim, please email us so we can try to resolve it informally within 30 days. Courts in India will have jurisdiction, but if you are a consumer living elsewhere, you keep the protection of the mandatory laws of your country and may bring a claim in your local courts.</p>
+        </section>
+
+        <section class="section-card" id="s17">
+          <div class="section-head">
+            <span class="sec-badge">17</span>
+            <h2>Changes to these Terms</h2>
+          </div>
+          <p>We may update these Terms. We will change the date at the top, and for significant changes we will tell you in the Game before they take effect. If you keep playing after that, the new Terms apply.</p>
+        </section>
+
+        <section class="section-card" id="s18">
+          <div class="section-head">
+            <span class="sec-badge">18</span>
+            <h2>Contact</h2>
+          </div>
+          <p>Ridge &amp; Lasso Studio<br>Email: <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+          <p>Ridge &amp; Lasso Studio is an independent game and app developer in India.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/hyper-focus/privacy.html">Hyper Focus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Games</h3>
+          <ul>
+            <li><a href="/arrow-out/privacy.html">Arrow Out 2D</a></li>
+            <li><a href="/arrow-out-3d/privacy.html">Arrow Out 3D</a></li>
+            <li><a href="/merge-dash/privacy.html">Merge Dash</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#connect">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ridge &amp; Lasso Studio</span>
+        <div class="footer-legal">
+          <a href="/merge-dash/terms.html">Terms of Service</a>
+          <a href="/merge-dash/privacy.html">Privacy Policy</a>
+          <a href="/merge-dash/licenses.html">Licenses</a>
+          <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

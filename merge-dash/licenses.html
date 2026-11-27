@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/R&L Symbol.svg" />
+  <link rel="apple-touch-icon" href="/R&L Symbol.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Open-source licenses · Merge Dash: Fruit Match</title>
+  <meta name="description" content="Open-source licenses for Merge Dash: Fruit Match by Ridge &amp; Lasso Studio." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #fbf9f9;
+      --surface-2: #f3f0f0;
+      --dark: #09090b;
+      --border: #e6e3e3;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --text: #18181b;
+      --text-body: #34343a;
+      --muted: #666670;
+      --accent: #e6001a;
+      --accent-hover: #c90017;
+      --font-display: "Oxanium", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --radius-lg: 14px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero-wrap {
+      position: relative;
+      background: var(--dark);
+      color: #ffffff;
+      overflow: hidden;
+      background-image:
+        radial-gradient(ellipse 65% 55% at 50% 105%, rgba(230, 0, 26, 0.34) 0%, rgba(230, 0, 26, 0.1) 45%, transparent 72%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+    }
+    .topbar {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: invert(1) brightness(100);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover { color: #ffffff; text-decoration: none; }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-contact:hover { background: var(--accent-hover); text-decoration: none; }
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(4.2rem, 13vw, 8.5rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .hero-meta {
+      margin: 12px 0 0;
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .pill-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+    .pill-nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-dark);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.75);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .pill-nav a:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pill-nav a.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .lead-box {
+      position: relative;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+      padding: 12px 0;
+    }
+    .lead-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(3.5rem, 11vw, 7rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(24, 24, 27, 0.045);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .lead-box p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .doc-grid {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .toc-card {
+      position: sticky;
+      top: 24px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    .toc-title {
+      margin: 0 0 14px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toc-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      text-decoration: none;
+      padding: 3px 0;
+      transition: color 0.15s ease;
+    }
+    .toc-list a:hover { color: var(--accent); text-decoration: none; }
+    .toc-num {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: var(--accent);
+      min-width: 20px;
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+      scroll-margin-top: 24px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sec-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .section-card p { margin: 0 0 12px; }
+    .section-card p:last-child { margin-bottom: 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 1px 6px;
+      border-radius: 5px;
+      color: var(--text);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 12px 0;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    details {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--text-body);
+      overflow-x: auto;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 44px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .footer-brand img {
+      height: 36px;
+      width: auto;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.84rem;
+      color: var(--muted);
+      max-width: 280px;
+    }
+    .footer-col h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .footer-col a {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 20px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .footer-legal a { color: var(--muted); }
+    .footer-legal a:hover { color: var(--accent); }
+    @media (max-width: 820px) {
+      .nav-links { display: none; }
+      .doc-grid { grid-template-columns: 1fr; }
+      .toc-card { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .topbar { padding: 16px 18px; }
+      .brand img { height: 34px; }
+      .section-card { padding: 20px 18px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Ridge &amp; Lasso Studio — Home">
+        <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#apps">Apps</a>
+        <a href="/#games">Games</a>
+        <a href="/#connect">Connect</a>
+      </nav>
+      <a class="btn-contact" href="/#connect">Contact →</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-watermark" aria-hidden="true">CREDITS</div>
+      <p class="eyebrow">Merge Dash: Fruit Match</p>
+      <h1>Open-source licenses</h1>
+      <p class="hero-meta">Last updated 27 November 2026</p>
+      <nav class="pill-nav" aria-label="Merge Dash legal documents">
+        <a href="/merge-dash/terms.html">Terms of Service</a>
+        <a href="/merge-dash/privacy.html">Privacy Policy</a>
+        <a href="/merge-dash/licenses.html" class="active">Licenses</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="lead-box">
+      <div class="lead-watermark" aria-hidden="true">CREDITS</div>
+      <p>Merge Dash: Fruit Match is built with the software and fonts listed below. We thank their authors. The fruit characters, themes, sounds and other game art are original to Ridge &amp; Lasso Studio and are not covered by these licenses.</p>
+    </div>
+
+    <div class="doc-grid">
+      <aside class="toc-card" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <ol class="toc-list">
+          <li><a href="#s1"><span class="toc-num">01</span>Software libraries</a></li>
+          <li><a href="#s2"><span class="toc-num">02</span>Fonts</a></li>
+          <li><a href="#s3"><span class="toc-num">03</span>Contact</a></li>
+        </ol>
+      </aside>
+
+      <div class="sections">
+        <section class="section-card" id="s1">
+          <div class="section-head">
+            <span class="sec-badge">01</span>
+            <h2>Software libraries</h2>
+          </div>
+          <table><thead><tr><th>Component</th><th>License</th></tr></thead><tbody><tr><td><b>Google Mobile Ads Unity plugin</b><br><span style="color:var(--muted);font-size:13px">11.6.0</span></td><td><a href="https://github.com/googleads/googleads-mobile-unity">Apache License 2.0</a></td></tr><tr><td><b>Google Play Games plugin for Unity</b><br><span style="color:var(--muted);font-size:13px">2.3.0</span></td><td><a href="https://github.com/playgameservices/play-games-plugin-for-unity">Apache License 2.0</a></td></tr><tr><td><b>Google Play In-App Review plugin</b><br><span style="color:var(--muted);font-size:13px">1.8.4</span></td><td><a href="https://github.com/google/play-unity-plugins">Apache License 2.0; Play Core SDK Terms of Service</a></td></tr><tr><td><b>Google Play In-App Update plugin</b><br><span style="color:var(--muted);font-size:13px">1.8.5</span></td><td><a href="https://github.com/google/play-unity-plugins">Apache License 2.0; Play Core SDK Terms of Service</a></td></tr><tr><td><b>External Dependency Manager for Unity</b><br><span style="color:var(--muted);font-size:13px">1.2.190</span></td><td><a href="https://github.com/googlesamples/unity-jar-resolver">Apache License 2.0</a></td></tr><tr><td><b>Google Play services and AndroidX libraries</b><br><span style="color:var(--muted);font-size:13px">bundled by the plugins above</span></td><td><a href="https://developer.android.com/studio/terms">Apache License 2.0; Android Software Development Kit License</a></td></tr><tr><td><b>Unity In-App Purchasing</b><br><span style="color:var(--muted);font-size:13px">5.5.0</span></td><td><a href="https://unity.com/legal/licenses/unity-companion-license">Unity Companion License</a></td></tr><tr><td><b>Unity Mobile Notifications</b><br><span style="color:var(--muted);font-size:13px">2.5.0</span></td><td><a href="https://unity.com/legal/licenses/unity-companion-license">Unity Companion License</a></td></tr><tr><td><b>Unity engine and packages</b><br><span style="color:var(--muted);font-size:13px">6000.5</span></td><td><a href="https://unity.com/legal/terms-of-service">Unity Terms of Service</a></td></tr></tbody></table>
+<p>The Apache License 2.0 is available at <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a>. Copies of these licenses and their notices are also included inside the app package.</p>
+        </section>
+
+        <section class="section-card" id="s2">
+          <div class="section-head">
+            <span class="sec-badge">02</span>
+            <h2>Fonts</h2>
+          </div>
+          <table><thead><tr><th>Font</th><th>Copyright and license</th></tr></thead><tbody><tr><td><b>Lilita One</b><br><span style="color:var(--muted);font-size:13px">Display headings and buttons</span></td><td>Copyright (c) 2011 Juan Montoreano (juan@remolacha.biz), with Reserved Font Names &quot;Lilita One&quot;<br>SIL Open Font License 1.1</td></tr><tr><td><b>Fredoka</b><br><span style="color:var(--muted);font-size:13px">Body text</span></td><td>Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)<br>SIL Open Font License 1.1</td></tr><tr><td><b>Roboto (numbers)</b><br><span style="color:var(--muted);font-size:13px">Coin and score figures</span></td><td>Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto-classic)<br>SIL Open Font License 1.1</td></tr><tr><td><b>Liberation Sans</b><br><span style="color:var(--muted);font-size:13px">TextMesh Pro fallback font</span></td><td>Digitized data copyright (c) 2010 Google Corporation
+	with Reserved Font Arimo, Tinos and Cousine.
+Copyright (c) 2012 Red Hat, Inc.
+	with Reserved Font Name Liberation.<br>SIL Open Font License 1.1</td></tr></tbody></table>
+<p>Text in Chinese, Japanese and Korean is drawn with the fonts already installed on your phone; the Game does not include them.</p>
+<details><summary>Full text of the SIL Open Font License 1.1</summary><pre>This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</pre></details>
+        </section>
+
+        <section class="section-card" id="s3">
+          <div class="section-head">
+            <span class="sec-badge">03</span>
+            <h2>Contact</h2>
+          </div>
+          <p>Questions about these licenses: <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+          <p>Ridge &amp; Lasso Studio is an independent game and app developer in India.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/hyper-focus/privacy.html">Hyper Focus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Games</h3>
+          <ul>
+            <li><a href="/arrow-out/privacy.html">Arrow Out 2D</a></li>
+            <li><a href="/arrow-out-3d/privacy.html">Arrow Out 3D</a></li>
+            <li><a href="/merge-dash/privacy.html">Merge Dash</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#connect">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ridge &amp; Lasso Studio</span>
+        <div class="footer-legal">
+          <a href="/merge-dash/terms.html">Terms of Service</a>
+          <a href="/merge-dash/privacy.html">Privacy Policy</a>
+          <a href="/merge-dash/licenses.html">Licenses</a>
+          <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

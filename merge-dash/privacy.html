@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/R&L Symbol.svg" />
+  <link rel="apple-touch-icon" href="/R&L Symbol.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Privacy Policy · Merge Dash: Fruit Match</title>
+  <meta name="description" content="Privacy Policy for Merge Dash: Fruit Match by Ridge &amp; Lasso Studio." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #fbf9f9;
+      --surface-2: #f3f0f0;
+      --dark: #09090b;
+      --border: #e6e3e3;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --text: #18181b;
+      --text-body: #34343a;
+      --muted: #666670;
+      --accent: #e6001a;
+      --accent-hover: #c90017;
+      --font-display: "Oxanium", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --radius-lg: 14px;
+      --radius-pill: 999px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero-wrap {
+      position: relative;
+      background: var(--dark);
+      color: #ffffff;
+      overflow: hidden;
+      background-image:
+        radial-gradient(ellipse 65% 55% at 50% 105%, rgba(230, 0, 26, 0.34) 0%, rgba(230, 0, 26, 0.1) 45%, transparent 72%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 44px 44px, 44px 44px;
+    }
+    .topbar {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      display: block;
+      filter: invert(1) brightness(100);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav-links a:hover { color: #ffffff; text-decoration: none; }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-contact:hover { background: var(--accent-hover); text-decoration: none; }
+    .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(4.2rem, 13vw, 8.5rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .hero-meta {
+      margin: 12px 0 0;
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .pill-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+    .pill-nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-dark);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.75);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .pill-nav a:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pill-nav a.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .lead-box {
+      position: relative;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+      padding: 12px 0;
+    }
+    .lead-watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(3.5rem, 11vw, 7rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(24, 24, 27, 0.045);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .lead-box p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .doc-grid {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .toc-card {
+      position: sticky;
+      top: 24px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    .toc-title {
+      margin: 0 0 14px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toc-list a {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.84rem;
+      color: var(--text-body);
+      text-decoration: none;
+      padding: 3px 0;
+      transition: color 0.15s ease;
+    }
+    .toc-list a:hover { color: var(--accent); text-decoration: none; }
+    .toc-num {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: var(--accent);
+      min-width: 20px;
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+      scroll-margin-top: 24px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sec-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .section-card p { margin: 0 0 12px; }
+    .section-card p:last-child { margin-bottom: 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 1px 6px;
+      border-radius: 5px;
+      color: var(--text);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 12px 0;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    details {
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 10px 14px;
+    }
+    summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--text-body);
+      overflow-x: auto;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 44px 24px 32px;
+    }
+    .footer-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .footer-brand img {
+      height: 36px;
+      width: auto;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.84rem;
+      color: var(--muted);
+      max-width: 280px;
+    }
+    .footer-col h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .footer-col a {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-top: 20px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .footer-legal a { color: var(--muted); }
+    .footer-legal a:hover { color: var(--accent); }
+    @media (max-width: 820px) {
+      .nav-links { display: none; }
+      .doc-grid { grid-template-columns: 1fr; }
+      .toc-card { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .topbar { padding: 16px 18px; }
+      .brand img { height: 34px; }
+      .section-card { padding: 20px 18px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Ridge &amp; Lasso Studio — Home">
+        <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#apps">Apps</a>
+        <a href="/#games">Games</a>
+        <a href="/#connect">Connect</a>
+      </nav>
+      <a class="btn-contact" href="/#connect">Contact →</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-watermark" aria-hidden="true">PRIVACY</div>
+      <p class="eyebrow">Merge Dash: Fruit Match</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-meta">Last updated 26 November 2026</p>
+      <nav class="pill-nav" aria-label="Merge Dash legal documents">
+        <a href="/merge-dash/terms.html">Terms of Service</a>
+        <a href="/merge-dash/privacy.html" class="active">Privacy Policy</a>
+        <a href="/merge-dash/licenses.html">Licenses</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="lead-box">
+      <div class="lead-watermark" aria-hidden="true">PRIVACY</div>
+      <p>This policy describes how Merge Dash: Fruit Match handles information. In short: your progress stays on your phone, ads, purchases and optional Play Games features are provided by Google, and we never sell your data.</p>
+    </div>
+
+    <div class="doc-grid">
+      <aside class="toc-card" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <ol class="toc-list">
+          <li><a href="#s1"><span class="toc-num">01</span>Who we are</a></li>
+          <li><a href="#s2"><span class="toc-num">02</span>Data that stays on your device</a></li>
+          <li><a href="#s3"><span class="toc-num">03</span>Data handled by Google services in the Game</a></li>
+          <li><a href="#s4"><span class="toc-num">04</span>Ads and your choices</a></li>
+          <li><a href="#s5"><span class="toc-num">05</span>Notifications</a></li>
+          <li><a href="#s6"><span class="toc-num">06</span>Emails you send us</a></li>
+          <li><a href="#s7"><span class="toc-num">07</span>Legal bases (EEA and UK)</a></li>
+          <li><a href="#s8"><span class="toc-num">08</span>Sharing and selling</a></li>
+          <li><a href="#s9"><span class="toc-num">09</span>Children</a></li>
+          <li><a href="#s10"><span class="toc-num">10</span>Retention</a></li>
+          <li><a href="#s11"><span class="toc-num">11</span>International transfers and security</a></li>
+          <li><a href="#s12"><span class="toc-num">12</span>Your rights</a></li>
+          <li><a href="#s13"><span class="toc-num">13</span>Changes to this policy</a></li>
+          <li><a href="#s14"><span class="toc-num">14</span>Contact</a></li>
+        </ol>
+      </aside>
+
+      <div class="sections">
+        <section class="section-card" id="s1">
+          <div class="section-head">
+            <span class="sec-badge">01</span>
+            <h2>Who we are</h2>
+          </div>
+          <p>Merge Dash: Fruit Match (the “Game”, Android package <code>com.ridgelasso.mergedash</code>) is made by Ridge &amp; Lasso Studio, an independent developer based in India (“we”, “us”). We are responsible for the personal data described in this policy. You can reach us at <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>.</p><p>The Game has no accounts of its own, no servers of ours and no analytics tools.</p>
+        </section>
+
+        <section class="section-card" id="s2">
+          <div class="section-head">
+            <span class="sec-badge">02</span>
+            <h2>Data that stays on your device</h2>
+          </div>
+          <p>Your progress (scores, coins, tools, lives, Adventure stars, quests, league trophies, tournament results, avatars and badges), settings (sound, music, vibration, effects, language, reminders, theme) and which purchases you own are stored on your phone. We never receive this data.</p><p>If you are signed in to Google Play Games, the Game also keeps a copy of your progress in your own Google Drive, using Play Games Saved Games, so you can carry it to another phone. That copy sits in a hidden application folder of <i>your</i> Drive: we cannot read it, and it does not count against your Drive storage. It is written only while you are signed in, and you can remove it in the Google Play Games app or at <a href="https://drive.google.com">drive.google.com</a> (Settings → Manage apps). Signing out of Play Games stops the Game from writing it.</p><p>You can erase the copy on your phone by clearing the app’s data or uninstalling the Game.</p>
+        </section>
+
+        <section class="section-card" id="s3">
+          <div class="section-head">
+            <span class="sec-badge">03</span>
+            <h2>Data handled by Google services in the Game</h2>
+          </div>
+          <p>The Game uses the following Google services. Each one collects data under Google’s own privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).</p><table><thead><tr><th>Service</th><th>What it uses</th><th>Why</th></tr></thead><tbody><tr><td><b>Google AdMob</b> (ads) and Google’s User Messaging Platform (consent)</td><td>Advertising ID, approximate location (the country or region derived from your IP address — never GPS or a precise position), device and app information, ad interactions, your consent choices</td><td>To show ads that keep the Game free, measure them, prevent fraud and, where the law requires it, ask for and store your consent</td></tr><tr><td><b>Google Play Games Services</b> (optional)</td><td>Your Play Games player ID, gamer name and avatar; your scores; which awards you have unlocked; and a saved copy of your game progress, held in a hidden folder of your own Google Drive</td><td>Weekly and all-time leaderboards, the Weekly Tournament board and its rank prizes, achievements, and restoring your progress on a new phone</td></tr><tr><td><b>Google Play Billing</b></td><td>Purchase and subscription status and order details. We never see your card or payment details</td><td>To sell and restore coin packs, bundles, Remove ads, Crowned Avatars and the Fruit Pass subscription</td></tr><tr><td><b>Google Play In-App Review</b></td><td>Handled entirely by Google Play</td><td>To let you rate the Game without leaving it</td></tr><tr><td><b>Android vitals</b> (Google Play)</td><td>Crash and performance reports, if you allowed sharing with app developers on your device</td><td>To find and fix crashes. We see only anonymous, aggregated reports</td></tr></tbody></table><p>Play Games sign-in is automatic only if you already use Google Play Games on your phone; you can sign out or manage it in the Google Play Games app. Leaderboard scores and your gamer name may be visible to other players, depending on your Play Games profile settings.</p>
+        </section>
+
+        <section class="section-card" id="s4">
+          <div class="section-head">
+            <span class="sec-badge">04</span>
+            <h2>Ads and your choices</h2>
+          </div>
+          <ul><li><b>EEA, UK and Switzerland:</b> on first launch Google’s consent form asks whether ads may be personalised. You can change your answer at any time in <b>Settings → Help → Privacy choices</b>.</li><li><b>Everywhere:</b> you can reset or delete your advertising ID in your phone’s settings (<i>Settings → Privacy → Ads</i> on most Android phones). Ads will then not be personalised from your past activity.</li><li><b>US state privacy laws:</b> where showing personalised ads counts as “selling” or “sharing” data, deleting your advertising ID, or turning on your device opt-out signal, opts you out.</li><li>Buying <b>Remove ads</b> (or having an active Fruit Pass) stops ads between runs. Optional rewarded videos (for coins, a tool, a life or a second chance) only play when you tap them.</li></ul><p>Google and its certified ad partners act under their own policies. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+        </section>
+
+        <section class="section-card" id="s5">
+          <div class="section-head">
+            <span class="sec-badge">05</span>
+            <h2>Notifications</h2>
+          </div>
+          <p>Reminders (for example, that your daily gift is ready or new quests have arrived) are scheduled on your phone itself. No data is sent anywhere to deliver them. Turn them off in <b>Settings → Reminders</b> or in your phone’s app settings.</p>
+        </section>
+
+        <section class="section-card" id="s6">
+          <div class="section-head">
+            <span class="sec-badge">06</span>
+            <h2>Emails you send us</h2>
+          </div>
+          <p>If you write to <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a> (for example with <b>Settings → Help → Report a problem</b>), we receive your email address and what you choose to send, such as your phone model. We use it only to answer you, and delete it within 24 months unless we need it longer to resolve a dispute.</p>
+        </section>
+
+        <section class="section-card" id="s7">
+          <div class="section-head">
+            <span class="sec-badge">07</span>
+            <h2>Legal bases (EEA and UK)</h2>
+          </div>
+          <ul><li><b>Contract:</b> to provide the Game, purchases and subscriptions.</li><li><b>Consent:</b> for personalised ads and the ad identifiers that need it. You can withdraw consent at any time.</li><li><b>Legitimate interests:</b> showing non-personalised ads to fund a free game, keeping it secure, fixing crashes and answering support emails.</li></ul>
+        </section>
+
+        <section class="section-card" id="s8">
+          <div class="section-head">
+            <span class="sec-badge">08</span>
+            <h2>Sharing and selling</h2>
+          </div>
+          <p>We do not sell your personal data for money and do not share it with anyone other than the Google services listed above. We may disclose information if the law requires it, or to protect our rights or users’ safety.</p>
+        </section>
+
+        <section class="section-card" id="s9">
+          <div class="section-head">
+            <span class="sec-badge">09</span>
+            <h2>Children</h2>
+          </div>
+          <p>The Game is meant for a general audience and is not directed at children under 13. We do not knowingly collect personal data from children. If you believe a child has given us data (for example by email), contact us and we will delete it.</p>
+        </section>
+
+        <section class="section-card" id="s10">
+          <div class="section-head">
+            <span class="sec-badge">10</span>
+            <h2>Retention</h2>
+          </div>
+          <ul><li>On-device data: until you clear app data or uninstall.</li><li>Play Games data: until you delete it in the Google Play Games app or your Google account.</li><li>Ad data: kept by Google as described in its policy.</li><li>Support emails: up to 24 months.</li></ul>
+        </section>
+
+        <section class="section-card" id="s11">
+          <div class="section-head">
+            <span class="sec-badge">11</span>
+            <h2>International transfers and security</h2>
+          </div>
+          <p>Google may process data in countries other than yours, including the United States, using safeguards such as the European Commission’s standard contractual clauses. Data sent between the Game and Google is encrypted in transit. No method of storage or transmission is completely secure, but we keep the data we handle to the minimum.</p>
+        </section>
+
+        <section class="section-card" id="s12">
+          <div class="section-head">
+            <span class="sec-badge">12</span>
+            <h2>Your rights</h2>
+          </div>
+          <p>Depending on where you live (for example under the GDPR, UK GDPR, India’s Digital Personal Data Protection Act 2023, or US state laws such as California’s CCPA/CPRA), you may have the right to access, correct, delete or receive a copy of your personal data, to object to or restrict its use, to withdraw consent, and to appeal our decision or complain to your data protection authority.</p><p>Because we do not hold your game data, most requests are fastest through the controls above or through Google (<a href="https://myaccount.google.com/">myaccount.google.com</a>). For anything else, email <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>. We reply within one month (45 days for US requests) and will not treat you differently for exercising your rights.</p>
+        </section>
+
+        <section class="section-card" id="s13">
+          <div class="section-head">
+            <span class="sec-badge">13</span>
+            <h2>Changes to this policy</h2>
+          </div>
+          <p>If we change how the Game uses data, we will update this page and the date at the top, and tell you in the Game when the change is significant.</p>
+        </section>
+
+        <section class="section-card" id="s14">
+          <div class="section-head">
+            <span class="sec-badge">14</span>
+            <h2>Contact</h2>
+          </div>
+          <p>Ridge &amp; Lasso Studio<br>Email: <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a></p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/R&amp;L Name.svg" alt="Ridge &amp; Lasso Studio" />
+          <p>Ridge &amp; Lasso Studio is an independent game and app developer in India.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/hyper-focus/privacy.html">Hyper Focus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Games</h3>
+          <ul>
+            <li><a href="/arrow-out/privacy.html">Arrow Out 2D</a></li>
+            <li><a href="/arrow-out-3d/privacy.html">Arrow Out 3D</a></li>
+            <li><a href="/merge-dash/privacy.html">Merge Dash</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#connect">Connect</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ridge &amp; Lasso Studio</span>
+        <div class="footer-legal">
+          <a href="/merge-dash/terms.html">Terms of Service</a>
+          <a href="/merge-dash/privacy.html">Privacy Policy</a>
+          <a href="/merge-dash/licenses.html">Licenses</a>
+          <a href="mailto:ridgeandlassostudio@gmail.com">ridgeandlassostudio@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
